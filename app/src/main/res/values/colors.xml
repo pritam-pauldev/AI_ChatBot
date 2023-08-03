@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="deep_green">#A0C49D</color>
+    <color name="deepest_green">#606C5D</color>
+    <color name="skin">#F7E6C4</color>
+    <color name="light_green">#F6FFDE</color>
+    <color name="cream">#F6F1F1</color>
+    <color name="white_1">#F1EDFD</color>
+    <color name="white_2">#FFF4F4</color>
+    <color name="orange">#F1C376</color>
+    <color name="grey">#9BABB8</color>
+    <color name="sky">#D2E9E9</color>
+    <color name="sky_2">#C4DFDF</color>
+<!--    <color name="deep_green">#A0C49D</color>-->
+<!--    <color name="deep_green">#A0C49D</color>-->
+<!--    <color name="deep_green">#A0C49D</color>-->
+<!--    <color name="deep_green">#A0C49D</color>-->
+<!--    <color name="deep_green">#A0C49D</color>-->
 </resources>
