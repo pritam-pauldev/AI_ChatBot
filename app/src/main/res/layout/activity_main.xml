@@ -21,8 +21,22 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:background="@drawable/top_rectangle_shape">
+                android:layout_height="300dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/shapeableImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sky_bgg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/roundbuttomimageview" />
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/lottieAnimationView"
@@ -45,6 +59,7 @@
                     android:layout_height="50dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@drawable/search_textbar"
                     android:drawableEnd="@drawable/search"
                     android:ems="10"
@@ -62,6 +77,20 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Services"
+                android:textColor="#CB6140"
+                android:textColorHighlight="#CB6140"
+                android:textColorHint="#CB6140"
+                android:textColorLink="#CB6140"
+                android:textSize="19sp"
+                android:textStyle="bold|italic" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,29 +101,49 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="30dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/home_button_bg">
+                            android:layout_margin="15dp">
 
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/shapeableImageView"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sky_bg"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cardView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="53dp"
+                                android:layout_height="49dp"
+                                app:cardCornerRadius="30dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/megaphone_03" />
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/megaphone_03" />
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -111,24 +160,45 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/home_button_bg">
+                            android:layout_margin="15dp">
 
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/shapeableImageView"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sky_bg"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cardView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="53dp"
+                                android:layout_height="49dp"
+                                app:cardCornerRadius="30dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/messages_03" />
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/messages_03" />
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -145,24 +215,45 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/home_button_bg">
+                            android:layout_margin="15dp">
 
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/shapeableImageView1"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sky_bg"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cardView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="53dp"
+                                android:layout_height="49dp"
+                                app:cardCornerRadius="30dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/image_03" />
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/image_03" />
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -179,33 +270,75 @@
 
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="45dp"
+                android:text="Services"
+                android:textColor="#CB6140"
+                android:textColorHighlight="#CB6140"
+                android:textColorHint="#CB6140"
+                android:textColorLink="#CB6140"
+                android:textSize="19sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="90dp"
+                android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
-                    android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/home_button_bg">
+                            android:layout_margin="15dp">
 
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/shapeableImageView"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sky_bg"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cardView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="53dp"
+                                android:layout_height="49dp"
+                                app:cardCornerRadius="30dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/image_03" />
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/megaphone_03" />
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -214,7 +347,7 @@
                             android:id="@+id/textView4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
+                            android:text="Text to Speech"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -222,24 +355,45 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/home_button_bg">
+                            android:layout_margin="15dp">
 
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/shapeableImageView"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sky_bg"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cardView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="53dp"
+                                android:layout_height="49dp"
+                                app:cardCornerRadius="30dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/image_03" />
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/messages_03" />
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -248,7 +402,7 @@
                             android:id="@+id/textView4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
+                            android:text="ChatBot"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -256,24 +410,45 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:layout_margin="15dp"
-                            android:background="@drawable/home_button_bg">
+                            android:layout_margin="15dp">
 
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="wrap_content"
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/shapeableImageView1"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sky_bg"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/cardView"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="53dp"
+                                android:layout_height="49dp"
+                                app:cardCornerRadius="30dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/image_03" />
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/image_03" />
+                            </androidx.cardview.widget.CardView>
 
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -282,7 +457,7 @@
                             android:id="@+id/textView4"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="TextView"
+                            android:text="Text to Image"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:textStyle="bold" />
