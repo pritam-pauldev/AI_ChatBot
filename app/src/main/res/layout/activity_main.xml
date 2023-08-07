@@ -89,7 +89,7 @@
                 android:textColorHighlight="#CB6140"
                 android:textColorHint="#CB6140"
                 android:textColorLink="#CB6140"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:textStyle="bold|italic" />
 
 
@@ -284,7 +284,7 @@
                 android:textColorHighlight="#CB6140"
                 android:textColorHint="#CB6140"
                 android:textColorLink="#CB6140"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:textStyle="bold|italic" />
 
             <LinearLayout
@@ -502,11 +502,13 @@
                     android:text="Profile" />
 
                 <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabItem_Home_page"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Home" />
 
                 <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabItem_Setting_page"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Setting" />

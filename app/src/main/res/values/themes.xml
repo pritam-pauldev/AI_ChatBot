@@ -13,6 +13,12 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="roundimageviewsetting" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
     <style name="roundbuttomimageview" parent="">
         <item name="cornerFamilyBottomLeft">rounded</item>
         <item name="cornerFamilyBottomRight">rounded</item>
